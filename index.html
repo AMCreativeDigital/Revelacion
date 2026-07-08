@@ -36,7 +36,7 @@
 }
 
 .estrellass img{
-    width: 400px;
+    width: 367px;
     animation: latido 4.5s infinite;
 }
 
@@ -62,7 +62,7 @@ footer{
     background-image: url(baby_1_transp.png);
     background-repeat: no-repeat;
     background-position: bottom center;
-    background-size: 420px 900px;
+    background-size: 425px 900px;
     
 }
 
@@ -197,7 +197,7 @@ background: linear-gradient(90deg, #23AEFF, #f421c3, #23AEFF);
     content: "";
     position: absolute;
     height: 4px;
-    width: 88%;
+    width: 100%;
     background: #23AEFF;
     border-radius: 10px;
     top: -2px;
@@ -208,7 +208,7 @@ background: linear-gradient(90deg, #23AEFF, #f421c3, #23AEFF);
     content: "";
     position: absolute;
     height: 4px;
-    width: 105%;
+    width: 100%;
     background: #f623b3;
     border-radius: 10px;
     bottom: -1px;
@@ -224,8 +224,8 @@ background: linear-gradient(90deg, #23AEFF, #f421c3, #23AEFF);
 
 .sobre{
     position: absolute;
-right:-49px;
-top: -6px;
+right:-44px;
+top: -1px;
 }
 
 .estrella{
@@ -295,6 +295,29 @@ top: -6px;
         margin-top: -20px;
     }
 
+  
+}
+
+
+@media (max-height: 767px){
+    body::before{
+        min-height: 100dvh;
+     background-image: url(baby_1_transp.png);
+    background-size: 375px 700px;
+    }
+
+    .estrellass{
+        margin-top: -10px;
+    }
+    .pagina1{
+        
+        margin-top: 0px;
+    }
+
+    .estrella2{
+        width: 367px;
+        left: auto;
+    }
   
 }
         </style>
