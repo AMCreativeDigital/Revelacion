@@ -14,7 +14,7 @@
 
      body{
     margin: 0;
-    min-height: 100dvh;
+    min-height: 100vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -27,16 +27,16 @@
 }
 
 
+
 .estrellass{
     position: absolute;
   
-    left: 50%;
-    transform: translateX(-50%);
+  
     z-index:1;
 }
 
 .estrellass img{
-    width: 345px;
+    width: 375px;
     animation: latido 4.5s infinite;
 }
 
@@ -49,8 +49,7 @@
     }
 }
 .pagina1,
-header,
-footer{
+header{
     position: relative;
     z-index: 1;
 }
@@ -62,7 +61,7 @@ footer{
     background-image: url(baby_1_transp.png);
     background-repeat: no-repeat;
     background-position: bottom center;
-    background-size: 425px 900px;
+    background-size: 425px 767px;
     
 }
 
@@ -96,7 +95,7 @@ footer{
     align-items: center;
 
     justify-content: flex-start; /* Empieza desde arriba */
-    padding-top: 40px;
+   
     z-index: 2;
 }
            h1{
@@ -164,12 +163,15 @@ background: linear-gradient(90deg, #23AEFF, #f421c3, #23AEFF);
                 margin-bottom: 20px;
             }
 
-           
+           .pagina1 p{
+            position: relative;
+            left: 5%;
+           }
 
 
           .info p{
     position: absolute;
-    right: -31px;
+    right: -42px;
     top: 170%;
     font-size: 13px;
     transform: translateY(-50%);
@@ -197,11 +199,11 @@ background: linear-gradient(90deg, #23AEFF, #f421c3, #23AEFF);
     content: "";
     position: absolute;
     height: 4px;
-    width: 92%;
+    width: 95%;
     background: #23AEFF;
     border-radius: 10px;
     top: -2px;
-    left: 5%;
+    left:2%;
     z-index: 2;
 }
 .info p::after{
@@ -242,14 +244,14 @@ top: -1px;
 
 .ubi{
     position: relative;
-    margin-top: -100px;
+    margin-top: -200px;
     z-index: 2;
 }
 
 .ubi h1{
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
+    margin-top: 220px;
     
 }
 
@@ -281,8 +283,24 @@ top: -1px;
     position: absolute;
     z-index: -1;
     animation: latido 4.5s infinite;
+    left: 5%;
+    top:10%;
 
 }
+
+
+.ubi::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: url("baby_1_transp.png") no-repeat bottom center;
+    background-size: 410px auto;
+
+    z-index: -1;
+}
+  
+
 
 @media (max-width: 430px){
 
@@ -301,32 +319,166 @@ top: -1px;
 
 @media (max-height: 767px){
 
-    body{
-        max-width: 425px;
-    }
+      html,
+body{
+    overflow-x: hidden;
+}
+
+ .pagina1 p{
+            position: relative;
+            left: 0%;
+            font-size: 11px;
+           }
+
+           .estrellass{
+    position: absolute;
+            left: 0%;
+    
+    z-index:1;
+}
+
+.ubi h1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    
+}
+
+.estrellass img{
+    width: 370px;
+    animation: latido 4.5s infinite;
+}
+
+
+
+    
+ 
     body::before{
-        min-height: 100vh;
+        min-height: 100svh;
      background-image: url(baby_1_transp.png);
-    background-size: 420px 700px;
+    background-size: 390px 700px;
     overflow-x: hidden;
     }
 
     .estrellass{
-        margin-top: -10px;
-        width: 105%;
+        margin-top: 10px;
+        width: -5%;
         
     }
     .pagina1{
         
-        margin-top: 0px;
+        margin-bottom: 50px;
     }
 
-    .estrella2{
-        width: 110%;
-        left: -10px;
-    }
-  
+    
+.estrella2{
+    position: absolute;
+    z-index: -1;
+    animation: latido 4.5s infinite;
+    left: -4%;
+    top:-8%;
+    width: -100px;
+
 }
+
+    .info p::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 102%;
+    background: #f623b3;
+    border-radius: 10px;
+    bottom: -1px;
+    left: -3%;
+
+    z-index: -0;
+}
+
+    .info p::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 102%;
+    background: #23AEFF;
+    border-radius: 10px;
+    top: -2px;
+    left:-3%;
+    z-index: 2;
+}
+   .info p{
+    position: absolute;
+    right: -45px;
+    top: 170%;
+    left: 49px;
+    font-size: 13px;
+    transform: translateY(-50%);
+    margin: 0;
+    color: #e40bb5;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    
+    z-index:-1;
+    background: rgba(255, 181, 229, 0.514);        /* Color del cuadro */
+    padding: 16px;     
+    padding-right: 18px;
+    padding-left:40px;       /* Espacio entre texto y borde */
+    border-radius: 15px;      /* Bordes redondeados */
+   
+}
+
+.ubi::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: url("baby_1_transp.png") no-repeat bottom center;
+    background-size: 390px auto;
+
+    z-index: -1;
+}
+
+.ubi {
+
+    margin-bottom: 50px;
+}
+  
+.estrella2{
+    position: absolute;
+    z-index: -1;
+    animation: latido 4.5s infinite;
+    left:5%;
+    top:5%;
+
+
+}
+
+    .recuerdos h1{
+        margin-top: -80px;
+    }
+
+
+
+}
+
+.recuerdos img{
+    z-index:1;
+}
+
+.recuerdos h1{
+    z-index: 1;
+}
+
+.recuerdos a{
+    margin-top: 50px;
+}
+
+.recuerdos a{
+    position: relative;
+    z-index: 10;
+}
+
         </style>
     </head>
     <body>
@@ -340,7 +492,7 @@ top: -1px;
             <br>
 
             <h1>
-                Revelacion  
+                Revelación  
             </h1>
 
             
@@ -398,26 +550,22 @@ top: -1px;
 
     
 
-        <footer>
-
-        
-        </footer>
-
+       
 
        <section class="ubi">
 
-      
+    
 
         <div class="estrella2">
              
-            <img src="estrellas.png" width="400px" alt="">
+            <img src="estrellas.png" width="350px" alt="">
         </div>
-        
     <h1>Ubicación</h1>
 
    
 
     <img class="marco" src="mapa4.png" width="350px" alt="Mapa">
+   
 
     <a class="btn-mapa" href="https://www.google.com/maps/place/Quinta+LB/@26.923981,-101.4152295,17z/data=!4m6!3m5!1s0x868bcd0059509515:0xefa70604b001eca9!8m2!3d26.9244689!4d-101.4151115!16s%2Fg%2F11x698zztt?entry=ttu&g_ep=EgoyMDI2MDcwNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
     Ver ubicación
@@ -426,12 +574,29 @@ top: -1px;
 </section>
 
 
+<section class="recuerdos">
+
+    <div class="estrellass">
+
+        <img src="estrellas.png" width="400px" alt="">
+    </div>
+
+    <h1>Comparte Tus Recuerdos</h1>
+
+    <img src="codigo.png" width="200px" alt="">
+
+    <a class="btn-mapa" href="https://photos.app.goo.gl/VmHynMVBRfyhCPDAA" target="_blank">
+        Compartir
+    </a>
+
+</section>
+
+
 <audio id="musica" loop>
     <source src="Ositos Cariñositos_ Aventuras en Quiéreme Mucho (Intro Latino  Letra).mp3" type="audio/mpeg">
 </audio>
 
-<button id="iniciar">
-    Abrir invitación 💙
+
 
     <script>
 const musica = document.getElementById("musica");
