@@ -1,0 +1,371 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Revelación</title>
+
+        <style>
+
+            html{
+    scroll-behavior: smooth;
+    background-color: #ECEBFF;
+}
+
+     body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+        background-image: url(baby_1_transp.png);
+
+    background-repeat: no-repeat;
+    background-size: 420px 900px;
+    background-position: bottom center;
+}
+
+
+.estrellass{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:1;
+}
+
+.estrellass img{
+    width: 400px;
+    animation: latido 4.5s infinite;
+}
+
+@keyframes latido{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.15);
+    }
+}
+.pagina1,
+header,
+footer{
+    position: relative;
+    z-index: 1;
+}
+
+            body::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(baby_1_transp.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 420px 900px;
+    
+}
+
+
+        .globos{
+            margin-top: -850px;
+            margin-bottom: -15px;
+            z-index: 1;
+        }
+
+        .osito{
+            position: relative;
+            top: -290px;
+            left: 80px;
+            z-index: 2;
+        }
+
+        .osita{
+            position: relative;
+            top: -520px;
+            left: -85px;
+            z-index: 2;
+        }
+
+.ubi{
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: flex-start; /* Empieza desde arriba */
+    padding-top: 40px;
+    z-index: 2;
+}
+           h1{
+    font-size: 55px;
+    text-align: center;
+    font-family: cursive;
+    color: white;
+    -webkit-text-stroke: 2px #f421c3;
+    letter-spacing: 3px;
+animation: breath 2s infinite;
+   will-change: text-shadow;
+  
+}
+
+.ubi button{
+    background: #23AEFF;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+                 section{
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+                .info{
+                position: relative;
+                width: 100%;
+                margin-top: 10px;
+                z-index: -2;
+            }
+
+            section p{
+                color: #23AEFF;
+                text-align: center;
+                font-weight: bolder;
+                text-transform: uppercase;
+                font-size: 12px;
+                margin-bottom: 20px;
+            }
+
+           
+
+
+          .info p{
+    position: absolute;
+    right: -55px;
+    top: 170%;
+    font-size: 13px;
+    transform: translateY(-50%);
+    margin: 0;
+    color: #e40bb5;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    
+    z-index:-1;
+    background: rgba(255, 181, 229, 0.514);        /* Color del cuadro */
+    padding: 16px;     
+    padding-right: 40px;
+    padding-left:80px;       /* Espacio entre texto y borde */
+    border-radius: 15px;      /* Bordes redondeados */
+   
+}
+
+.info span{
+    color: #23AEFF;
+}
+
+.info p::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 88%;
+    background: #23AEFF;
+    border-radius: 10px;
+    top: -2px;
+    left: -5%;
+    z-index: 2;
+}
+.info p::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 105%;
+    background: #f623b3;
+    border-radius: 10px;
+    bottom: -1px;
+    left: -5%;
+
+    z-index: -0;
+}
+
+.info p::before,
+.info p::after{
+    z-index:2;
+}
+
+.sobre{
+    position: absolute;
+right:-49px;
+top: -6px;
+}
+
+.estrella{
+    position: absolute;
+                left: -29px;
+                top: 200%;
+                transform: translateY(-50%);
+                width: 150px;
+                background: rgba(255, 255, 255, 0); /* Para que tape la línea detrás */
+                padding: 5px;
+}
+
+
+
+.ubi{
+    position: relative;
+    margin-top: -100px;
+    z-index: 2;
+}
+
+.ubi h1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    
+}
+
+.btn-mapa{
+     background: #23AEFF;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration-line: none;
+     transition: transform 0.3s ease;
+}
+
+.btn-mapa:hover{
+    transform: scale(1.2);
+    background-color: #e40bb5;
+}
+.marco{
+     border: 8px solid #f623b3;
+    border-radius: 20px;
+    margin-bottom: 90px;
+}
+
+.estrella2{
+    position: absolute;
+    z-index: -1;
+    animation: latido 4.5s infinite;
+
+}
+        </style>
+    </head>
+    <body>
+        <div class="estrellass">
+
+<img src="estrellas.png" width="400px" alt="">
+        </div>
+        
+        <header>
+            <br>
+            <br>
+
+            <h1>
+                Revelacion  
+            </h1>
+
+            
+        </header>
+
+        
+    <section class="pagina1">
+
+         <div class="osito">
+            
+            <img src="osito_azul.png" width="120px" alt="">
+           
+        </div>
+
+        <div class="osita">
+             <img src="osito_rosa.png" width="120px" alt="">
+        </div>
+       
+        <div class="globos">
+             <img src="globo_azul.png" width="150px" alt="">
+        <img src="globo_rosa.png" width="150px">
+        </div>
+
+       
+        <p>
+            Damos gracias a Dios por este regalo.
+            <br>
+            Una vida crece dentro de mami y se alimenta <br>
+            con el amor de papi, queremos que estés <br>
+            presente junto a mis papis ana y angel en mi <br>
+            revelación de género.
+        </p>
+
+        <div class="info">
+           <br>
+            <img class="estrella" src="estrella.png" alt="">
+            
+            <p>La hora es 6:00 PM
+                <br>
+                Calle 2 de abril 701 Col. <br>
+                el pueblo quinta lb <br>
+                código de vestimenta
+                <br>
+                <span>azul</span> o rosa
+                
+
+            </p>
+            <img class="sobre" src="sobre.png" width="70px" alt="">
+            
+            </div>
+
+            
+            
+    </section>
+
+    
+
+        <footer>
+
+        
+        </footer>
+
+
+       <section class="ubi">
+
+      
+
+        <div class="estrella2">
+             
+            <img src="estrellas.png" width="400px" alt="">
+        </div>
+        
+    <h1>Ubicación</h1>
+
+   
+
+    <img class="marco" src="mapa4.png" width="350px" alt="Mapa">
+
+    <a class="btn-mapa" href="https://www.google.com/maps/place/Quinta+LB/@26.923981,-101.4152295,17z/data=!4m6!3m5!1s0x868bcd0059509515:0xefa70604b001eca9!8m2!3d26.9244689!4d-101.4151115!16s%2Fg%2F11x698zztt?entry=ttu&g_ep=EgoyMDI2MDcwNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+    Ver ubicación
+</a>
+
+</section>
+
+
+
+    </body>
+    </html>
