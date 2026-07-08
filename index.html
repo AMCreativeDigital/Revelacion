@@ -487,6 +487,8 @@ body{
         </style>
     </head>
     <body>
+
+        
         <div class="estrellass">
 
 <img src="estrellas.png" width="400px" alt="">
@@ -610,15 +612,14 @@ function iniciarMusica(){
     musica.play();
 
     // Evita que se vuelva a ejecutar
-    document.removeEventListener("click", iniciarMusica);
-    document.removeEventListener("touchstart", iniciarMusica);
-    document.removeEventListener("scroll", iniciarMusica);
+    
+    
 }
 
 document.addEventListener("click", iniciarMusica);
 document.addEventListener("touchstart", iniciarMusica);
 document.addEventListener("scroll", iniciarMusica);
 </script>
-</button>
+
     </body>
     </html>
