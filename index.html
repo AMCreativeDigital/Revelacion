@@ -36,7 +36,7 @@
 }
 
 .estrellass img{
-    width: 367px;
+    width: 345px;
     animation: latido 4.5s infinite;
 }
 
@@ -300,10 +300,14 @@ top: -1px;
 
 
 @media (max-height: 767px){
+
+    body{
+        max-width: 425px;
+    }
     body::before{
         min-height: 100vh;
      background-image: url(baby_1_transp.png);
-    background-size: 425px 700px;
+    background-size: 420px 700px;
     overflow-x: hidden;
     }
 
@@ -422,6 +426,29 @@ top: -1px;
 </section>
 
 
+<audio id="musica" loop>
+    <source src="Ositos Cariñositos_ Aventuras en Quiéreme Mucho (Intro Latino  Letra).mp3" type="audio/mpeg">
+</audio>
 
+<button id="iniciar">
+    Abrir invitación 💙
+
+    <script>
+const musica = document.getElementById("musica");
+
+function iniciarMusica(){
+    musica.play();
+
+    // Evita que se vuelva a ejecutar
+    document.removeEventListener("click", iniciarMusica);
+    document.removeEventListener("touchstart", iniciarMusica);
+    document.removeEventListener("scroll", iniciarMusica);
+}
+
+document.addEventListener("click", iniciarMusica);
+document.addEventListener("touchstart", iniciarMusica);
+document.addEventListener("scroll", iniciarMusica);
+</script>
+</button>
     </body>
     </html>
