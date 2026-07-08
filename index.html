@@ -104,11 +104,27 @@ footer{
     text-align: center;
     font-family: cursive;
     color: white;
-    -webkit-text-stroke: 2px #f421c3;
+    -webkit-text-stroke: 2px #eeb5e1;
     letter-spacing: 3px;
-animation: breath 2s infinite;
-   will-change: text-shadow;
+background: linear-gradient(90deg, #23AEFF, #f421c3, #23AEFF);
+    background-size: 200%;
+
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    animation: moverColor 3s infinite;
   
+}
+
+@keyframes moverColor{
+    from{
+        background-position: 0%;
+    }
+
+    to{
+        background-position: 200%;
+    }
 }
 
 .ubi button{
